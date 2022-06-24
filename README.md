@@ -1,7 +1,9 @@
 ## Autocorrelation in practice
 The method of [autocorrelation](https://en.wikipedia.org/wiki/Autocorrelation) is an interesting engineering case of measuring correlation and covariance. This project describes how the autocorrelation method works with some examples.
 
-In brief: Autocorrelation is a computational method to distguish how a signal changes in time by the decreasing measure of similarity between itself with a time-delayed version. 
+In brief: Autocorrelation is a computational method to distguish how a signal changes in time by the decreasing measure of similarity between itself with a time-delayed version.
+
+Disclaimer: For this method to be effective, it is important to note that it will only operate on electromagnetic waves as _signals_, rather than power.
 
 
 ```python
@@ -14,9 +16,9 @@ plt.style.use('seaborn-poster')
 %matplotlib inline
 ```
 
-## Generate a sine signal
+## Generate a sinusoid
 
-Generate a sinusoidal (sine) wave with frequency 0.1 Hz using a sampling rate of 1 Hz, then plot.
+A sinusoidal (sine) wave is a mathematical curve of a trignometric function which is the most common in Nature. Generate a sinusoid of frequency ```0.1 Hz``` and sampling rate of ```1 Hz``` and plot it.
 
 
 ```python
@@ -34,9 +36,9 @@ plt.show()
 
 ![png](/images/fig.1.png)
 
-## Plot autocorrelation using statsmodels
+## Plotting autocorrelation
 
-Plot autocorrelation using [statsmodels](http://statsmodels.sourceforge.net/).
+The [statsmodels](http://statsmodels.sourceforge.net/) package is used.
 
 
 ```python
