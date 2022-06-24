@@ -16,7 +16,7 @@ plt.style.use('seaborn-poster')
 
 ## Generate a sine signal
 
-To begin, generate a sinusoidal (sine) wave with frequency 0.1 Hz using a sampling rate of 1 Hz, then plot:
+Generate a sinusoidal (sine) wave with frequency 0.1 Hz using a sampling rate of 1 Hz, then plot.
 
 
 ```python
@@ -49,16 +49,16 @@ acf = sm.tsa.acf(y, nlags=len(y))
 plt.figure(figsize = (10, 8))
 lag = np.arange(len(y))
 plt.plot(lag, acf)
-plt.xlabel('Lags')
+plt.xlabel('Delay')
 plt.ylabel('Autocorrelation')
 ```
 
 ![png](/images/fig.2.png)
 
 
-## Creating the animation to illustrate the autocorrelation method
+## Create an animation of the autocorrelation method
 
-It is a practical execution of a simple method in the time domain where a signal of interest (or in noise) is understood relative to its position in the time-domain. Contrary to what one learns in physics, not all spectra are continuous. By shifting the signal to incude a time lag (gaining a new _family time_) and calculate the correlation with the original signal the function will [shift the signal in the frequency domain](http://qingkaikong.blogspot.com/2016/03/shift-signal-in-frequency-domain.html). 
+It is a practical execution of a simple method in the time-domain where a signal of interest (or buried in noise) is understood relative to its position in the time-domain. Contrary to what one learns in physics, not all spectra are continuous. By shifting the signal to incude a time lag (gaining a new _family time_) and calculate the correlation with the original signal the function will [shift the signal in the frequency domain](http://qingkaikong.blogspot.com/2016/03/shift-signal-in-frequency-domain.html). 
 
 
 ```python
