@@ -119,7 +119,9 @@ n_frame = len(y)
 
 def updatefig(i):
     '''
-    A helper function to plot the two figures, the top panel is the time domain signal with the red signal showing the shifted signal. The bottom figure is the one corresponding to the autocorrelation from the above figure. 
+    A helper function to plot the two figures, the top panel is the time domain signal 
+    with the red signal showing the shifted signal. The bottom figure is the one corresponding
+    to the autocorrelation from the above figure. 
     '''
     fig.clear()
     # Apply a shift to the signal
