@@ -1,5 +1,7 @@
-## Autocorrelation in practise
-As described in [autocorrelation](https://en.wikipedia.org/wiki/Autocorrelation) her e is code to create an animation of how the autocorrelation method works. 
+## Autocorrelation in practice
+The method of [autocorrelation](https://en.wikipedia.org/wiki/Autocorrelation) is an interesting engineering case of measuring correlation and covariance. This project describes how the autocorrelation method works with some examples.
+
+In brief: Autocorrelation is a computational method to distguish how a signal changes in time by the decreasing measure of similarity between itself with a time-delayed version. 
 
 
 ```python
@@ -32,9 +34,9 @@ plt.show()
 
 ![png](/images/fig.1.png)
 
-## Plot the autocorrelation using statsmodels
+## Plot autocorrelation using statsmodels
 
-Plot the autocorrelation using an existing package - [statsmodels](http://statsmodels.sourceforge.net/). The idea of autocorrelation is to provide a measure of similarity between a signal and itself with a time-delay relative. 
+Plot autocorrelation using [statsmodels](http://statsmodels.sourceforge.net/).
 
 
 ```python
